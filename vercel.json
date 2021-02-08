@@ -2,12 +2,7 @@
     "rewrites": [
         {
             "source": "/",
-            "destination": "/api/serve-cv"
+            "destination": "/api"
         }
-    ],
-    "functions": {
-        "api/serve-cv.js": {
-            "includeFiles": "_files/**"
-        }
-    }
+    ]
 }
