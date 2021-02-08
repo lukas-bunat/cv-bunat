@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/api/serve-cv"
+        }
+    ],
+    "functions": {
+        "api/serve-cv.js": {
+            "includeFiles": "_files/**"
+        }
+    }
+}
