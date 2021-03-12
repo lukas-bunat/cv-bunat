@@ -3,11 +3,28 @@
         {
             "source": "/",
             "destination": "/api/serve-cv"
+        },
+        {
+            "source": "/resume(/{0,1})",
+            "destination": "/api/resume-all"
+        },
+        {
+            "source": "/resume/:version",
+            "destination": "/api/resume-history"
         }
     ],
     "functions": {
         "api/serve-cv.js": {
-            "includeFiles": "_files/**"
+            "includeFiles": "public/src/**",
+            "memory": 128
+        },
+        "api/resume-history.js": {
+            "includeFiles": "public/src/**",
+            "memory": 128
+        },
+        "api/resume-all.js": {
+            "includeFiles": "public/src/**",
+            "memory": 128
         }
     }
 }
